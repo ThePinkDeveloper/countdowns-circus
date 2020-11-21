@@ -12,6 +12,9 @@ $container -> set('carbon', function() {
     return new Carbon();
 });
 
+$container->set('db', function() {
+    return new \PDO('sqlite:database/db.sqlite');
+});
 
 // last line always
 $app = AppFactory::create();

@@ -1,4 +1,4 @@
 <?php
 
 $app->addRoutingMiddleware();
-$errorMiddleware = $app->addErrorMiddleware(true, true, true, $logger);
+$errorMiddleware = $app->addErrorMiddleware(true, true, true);
